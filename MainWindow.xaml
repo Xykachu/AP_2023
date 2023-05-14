@@ -1,0 +1,30 @@
+﻿<Window x:Class="guessmaker_2023.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:guessmaker_2023"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBox x:Name="player_1_nameBox" HorizontalAlignment="Left" Margin="163,85,0,0" TextWrapping="Wrap" Text="Player 1" VerticalAlignment="Top" Width="151" Height="26" VerticalContentAlignment="Center"/>
+        <Label x:Name="label_Name" Content="Player 1 name: " HorizontalAlignment="Left" Margin="43,83,0,0" VerticalAlignment="Top" Height="30" Width="120" HorizontalContentAlignment="Right" FontWeight="Bold"/>
+        <TextBox x:Name="guess_1_numberBox" HorizontalAlignment="Left" Margin="163,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="151" Height="27" VerticalContentAlignment="Center" />
+        <Label x:Name="labelforguess" Content="Guess a number: " HorizontalAlignment="Left" Margin="43,124,0,0" VerticalAlignment="Top" Height="31" Width="120" HorizontalContentAlignment="Right" FontWeight="Bold"/>
+        <ListBox x:Name="DisplayGuessesList"  Margin="61,265,458,76" FontSize="16"/>
+        <ProgressBar x:Name="progressBar" HorizontalAlignment="Left" Height="27" Margin="163,170,0,0" VerticalAlignment="Top" Width="151" Value="100" />
+        <Label x:Name="label_title" Content="First player to guess the number wins! (1-9)" HorizontalAlignment="Left" Margin="175,23,0,0" VerticalAlignment="Top" Height="37" Width="456" HorizontalContentAlignment="Center" FontWeight="Bold" FontSize="18"/>
+        <TextBox x:Name="player_2_nameBox" HorizontalAlignment="Left" Margin="589,85,0,0" TextWrapping="Wrap" Text="Player 2" VerticalAlignment="Top" Width="151" Height="26" VerticalContentAlignment="Center"/>
+        <Label x:Name="label_Name_Copy" Content="Player 2 name: " HorizontalAlignment="Left" Margin="469,83,0,0" VerticalAlignment="Top" Height="30" Width="120" HorizontalContentAlignment="Right" FontWeight="Bold"/>
+        <Label x:Name="labelforguess_Copy" Content="Guess a number: " HorizontalAlignment="Left" Margin="469,124,0,0" VerticalAlignment="Top" Height="31" Width="120" HorizontalContentAlignment="Right" FontWeight="Bold"/>
+        <TextBox x:Name="guess_2_numberBox" HorizontalAlignment="Left" Margin="589,126,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="151" Height="27" VerticalContentAlignment="Center" />
+        <Button Content="Restart" HorizontalAlignment="Left" Margin="283,363,0,0" VerticalAlignment="Top" Click="Button_Click" Padding="10,4,10,4"/>
+        <Label x:Name="labelforguess_Copy1" Content="Guesses left: " HorizontalAlignment="Left" Margin="43,168,0,0" VerticalAlignment="Top" Height="31" Width="120" HorizontalContentAlignment="Right" FontWeight="Bold"/>
+        <ProgressBar x:Name="progressBar_2" HorizontalAlignment="Left" Height="27" Margin="589,170,0,0" VerticalAlignment="Top" Width="151" Foreground="#FF0E7E8C" />
+        <Label x:Name="labelforguess_Copy2" Content="Guesses left: " HorizontalAlignment="Left" Margin="469,170,0,0" VerticalAlignment="Top" Height="31" Width="120" HorizontalContentAlignment="Right" FontWeight="Bold"/>
+        <ListBox x:Name="DisplayWinners"  Margin="431,265,56,76" FontSize="10"/>
+        <Label x:Name="labelWinners" Content="Past games:" HorizontalAlignment="Left" Margin="431,234,0,0" VerticalAlignment="Top" Height="31" Width="75" HorizontalContentAlignment="Right" FontWeight="Bold"/>
+
+    </Grid>
+
+</Window>
